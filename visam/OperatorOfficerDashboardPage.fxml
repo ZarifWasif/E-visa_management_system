@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="OperatorOfficerBorderPane" prefHeight="738.0" prefWidth="609.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.OperatorOfficerDashboardPageController">
+   <bottom>
+      <VBox prefHeight="609.0" prefWidth="610.0" spacing="30.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="40.0" top="40.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+         <children>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#ProcessVisaApplicationButtonOnClick" prefHeight="38.0" prefWidth="222.0" style="-fx-background-color: silver;" text="Process visa applications" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button lineSpacing="2.0" mnemonicParsing="false" onAction="#VerifyDocumentsButtonOnClick" prefHeight="40.0" prefWidth="218.0" style="-fx-background-color: silver;" text="Verify documents" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="164.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#ProvideCustomerServiceButtonOnClick" prefHeight="40.0" prefWidth="240.0" style="-fx-background-color: silver;" text="Provide customer service" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="280.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#CommunicateWithOtherTeamMembersButtonOnClick" prefHeight="51.0" prefWidth="367.0" style="-fx-background-color: silver;" text="Communicate with other team members" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#ChangesRegulationsandPoliciesButtonOnClick" prefHeight="38.0" prefWidth="385.0" style="-fx-background-color: silver;" text="Up-to-date changes regulations and policies" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#SendReporttotheDirectorButtonOnClick" prefHeight="38.0" prefWidth="249.0" style="-fx-background-color: silver;" text="Send Report to the Director " textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#ReviewAndSendButtonOnClick" prefHeight="38.0" prefWidth="514.0" style="-fx-background-color: silver;" text="Review and Send applicants suggestion box to the Supervisor" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="128.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#AssistwithothertasksButtonOnClick" prefHeight="40.0" prefWidth="246.0" style="-fx-background-color: silver;" text="Assist with other tasks" textFill="#17202a" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#OperatorOfficerLogOutBttonClick" prefHeight="35.0" prefWidth="89.0" style="-fx-background-color: #bdee0f;" text="Log Out" textFill="#ff0303">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Operator Officer Dashboard" textAlignment="RIGHT" wrappingWidth="552.5368318557739" BorderPane.alignment="CENTER">
+         <fill>
+            <RadialGradient centerX="1.0" centerY="1.0" focusDistance="0.788990860685296" radius="0.17889906069554323">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5368421077728271" green="0.1530994176864624" blue="0.1530994176864624" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.15369999408721924" green="0.20336391031742096" blue="0.5299999713897705" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Text>
+   </top>
+</BorderPane>

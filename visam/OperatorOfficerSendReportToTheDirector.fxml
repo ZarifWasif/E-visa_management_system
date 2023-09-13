@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.OperatorOfficerSendReportToTheDirectorController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToOperatorOfficerDashBoardButtonOnClick" prefHeight="28.0" prefWidth="64.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="372.0" prefWidth="629.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="ApplicantName" layoutX="42.0" layoutY="57.0" prefHeight="26.0" prefWidth="116.0" promptText="Applicant Name" />
+            <TextField fx:id="VisaApprovedStatus" layoutX="42.0" layoutY="110.0" prefHeight="26.0" prefWidth="116.0" promptText="Visa Approved Status" />
+            <TextField fx:id="NidNumber" layoutX="42.0" layoutY="159.0" prefHeight="26.0" prefWidth="116.0" promptText="Nid Number" />
+            <TextField fx:id="MobileNumber" layoutX="42.0" layoutY="207.0" prefHeight="26.0" prefWidth="116.0" promptText="Mobile Number" />
+            <TextField fx:id="Nationality" layoutX="42.0" layoutY="256.0" prefHeight="26.0" prefWidth="116.0" promptText="Nationality" />
+            <Button layoutX="63.0" layoutY="301.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit" />
+            <Button layoutX="358.0" layoutY="269.0" mnemonicParsing="false" onAction="#ViewButtonOnClick" text="View" />
+            <Text layoutX="270.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Text layoutX="30.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operator Officer Send Report to the director" wrappingWidth="140.44964599609375" />
+            <TextArea fx:id="OperatorOfficerReport" layoutX="279.0" layoutY="59.0" prefHeight="200.0" prefWidth="200.0" promptText="Direct of Visa Management System can see this " />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

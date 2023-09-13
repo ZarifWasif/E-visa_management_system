@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.ApplicantContactWithSupportOfficerController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToApplicantDashBoardButtonOnClick" prefHeight="33.0" prefWidth="67.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="358.0" prefWidth="600.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="ApplicantName" layoutX="200.0" layoutY="42.0" prefHeight="26.0" prefWidth="218.0" />
+            <TextArea fx:id="ApplicantMessage" layoutX="198.0" layoutY="134.0" prefHeight="88.0" prefWidth="219.0" promptText="Write Message Here" />
+            <TextField fx:id="ApplicantID" layoutX="199.0" layoutY="85.0" prefHeight="26.0" prefWidth="218.0" />
+            <Text layoutX="93.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant Name:" />
+            <Text layoutX="91.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Applicant ID:" wrappingWidth="91.1558837890625" />
+            <Button layoutX="439.0" layoutY="170.0" mnemonicParsing="false" onAction="#MessageSubmitButtonOnClick" text="Submit" />
+            <TextArea fx:id="SupportOfficerReply" layoutX="198.0" layoutY="244.0" prefHeight="88.0" prefWidth="219.0" promptText="Support Officer Reply" />
+            <Button layoutX="427.0" layoutY="275.0" mnemonicParsing="false" onAction="#ViewSupportOfficerReplyButtonOnClick" text="View Support Officer Reply" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

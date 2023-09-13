@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.SigninSceneController">
+   <children>
+      <Label fx:id="RegLabel" layoutX="270.0" layoutY="130.0" prefHeight="61.0" prefWidth="252.0" textFill="#2c2626">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane id="AnchorPane" prefHeight="574.0" prefWidth="766.0" style="-fx-background-color: aqua;">
+         <children>
+            <TextField fx:id="userName" layoutX="339.0" layoutY="166.0" promptText="Name" />
+            <Label layoutX="86.0" layoutY="165.0" prefHeight="32.0" prefWidth="234.0" text="Select a User Name :">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="86.0" layoutY="247.0" text="Choose a Password :">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="userPassword" layoutX="339.0" layoutY="249.0" promptText="Password" />
+            <ComboBox fx:id="allUserInCombox" layoutX="339.0" layoutY="318.0" prefHeight="31.0" prefWidth="187.0" />
+            <Button layoutX="366.0" layoutY="376.0" mnemonicParsing="false" onAction="#registerButtonOnClick" style="-fx-background-color: silver;" text="Register" textFill="#18092f">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Button>
+            <Button layoutX="646.0" layoutY="509.0" mnemonicParsing="false" onAction="#BackToLoginPage" prefHeight="45.0" prefWidth="80.0" style="-fx-background-color: silver;" text="Go Back">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="RegLabel1" layoutX="240.0" layoutY="86.0" prefHeight="61.0" prefWidth="252.0" textFill="#2c2626">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

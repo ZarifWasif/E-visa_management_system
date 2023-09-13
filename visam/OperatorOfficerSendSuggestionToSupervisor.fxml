@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.OperatorOfficerSendSuggestionToSupervisorController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToOperatorOfficerDashBoardButtonOnClick" prefHeight="34.0" prefWidth="67.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="OperatorOfficerName" layoutX="55.0" layoutY="57.0" prefHeight="26.0" prefWidth="200.0" promptText="Operator Officer Name" />
+            <TextArea fx:id="SuggestionAndComplianBoxReport" layoutX="55.0" layoutY="111.0" prefHeight="190.0" prefWidth="200.0" promptText="Suggestion Box/Complian Box Report Details" />
+            <Button layoutX="128.0" layoutY="316.0" mnemonicParsing="false" onAction="#SubmitToSuperVisorButtonOnClick" text="Submit" />
+            <Text layoutX="384.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SuperVisor Can Show This:" />
+            <TextArea fx:id="ReportFromOperatorOfficer" layoutX="355.0" layoutY="77.0" prefHeight="200.0" prefWidth="200.0" promptText="Report From Operator Officer" />
+            <Button layoutX="429.0" layoutY="289.0" mnemonicParsing="false" onAction="#ShowOperatorOfficerReportButtonOnClick" text="Show" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

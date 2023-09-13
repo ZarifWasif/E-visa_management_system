@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.ApplicantSeeVisaRelatedInformationController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToApplicantDashBoardButtonOnClick" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="31.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="General Requirements for all Categories:   1. Filled-in online application Form(www.visa.gov.bd)2. Photographs (Size 45x35mm and recent one); 02 copies (Photo is mandatory with white background )3. Valid Passport4. Payment receipt of Visa fee (No fee is required for Indian citizen). For countries (other than India) Visa fee is applicable.5. Old Passport required if anyWhile filling in online, we suggest that you have the following information on hand-1. Valid Passport2. 45x35mm digital photo in jpeg format, maximum size is 300kb3. Address in Bangladesh (should consist details of Village, Post Office, Police Station, District, Pincode, City and Country)4. Email Address" wrappingWidth="191.73675537109375" />
+            <Text layoutX="284.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REQUIREMENTS FOR STUDENT (S) VISA    Who are eligibleStudent studying in Government approved educational institution.Arrival / travel purpose StudyEssential Documents to issueAll documents for Tourist Visa.Document related to admission under government approved educational institution in Bangladesh, sponsorship, bank guarantee and others.Essential Documents to extendRecommendation of concerned educational institution, sponsorship, non-employment certificate and positive verification report from police." wrappingWidth="223.73675537109375" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

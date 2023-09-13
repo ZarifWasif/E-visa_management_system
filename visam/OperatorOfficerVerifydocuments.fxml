@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.OperatorOfficerVerifydocumentsController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToOperatorOfficerDashBoardButtonOnClick" prefHeight="31.0" prefWidth="64.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="ApplicantsDocuments" layoutX="190.0" layoutY="47.0" prefHeight="200.0" prefWidth="210.0" />
+            <Button layoutX="212.0" layoutY="271.0" mnemonicParsing="false" onAction="#SeeApplicantsDocumentsButtonOnClick" text="See applicants Documents" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

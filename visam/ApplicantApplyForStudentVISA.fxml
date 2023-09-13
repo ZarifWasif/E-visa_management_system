@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.ApplicantApplyForStudentVISAController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" style="-fx-background-color: aqua;">
+         <children>
+            <Button layoutX="268.0" layoutY="365.0" mnemonicParsing="false" onAction="#StudentBackToApplicantDashboardButtonOnClick" prefHeight="34.0" prefWidth="70.0" text="Back" />
+            <TextField fx:id="StudentFullName" layoutX="47.0" layoutY="32.0" prefHeight="26.0" prefWidth="114.0" promptText="Student Full Name" />
+            <TextField fx:id="SPermanentAddress" layoutX="47.0" layoutY="115.0" prefHeight="26.0" prefWidth="114.0" promptText="Permanent Address" />
+            <TextField fx:id="SAddressInBangladesh" layoutX="47.0" layoutY="157.0" prefHeight="26.0" prefWidth="114.0" promptText="Address In Bangladesh" />
+            <TextField fx:id="StudentPassportNo" layoutX="47.0" layoutY="71.0" prefHeight="26.0" prefWidth="106.0" promptText="Passport No" />
+            <TextField fx:id="SPresentNationality" layoutX="47.0" layoutY="336.0" prefHeight="26.0" prefWidth="106.0" promptText="Present Nationality" />
+            <TextField fx:id="SPlaceOfBirth" layoutX="46.0" layoutY="293.0" prefHeight="26.0" prefWidth="106.0" promptText="Place Of Birth" />
+            <DatePicker fx:id="SDateOfBirth" layoutX="47.0" layoutY="199.0" prefHeight="26.0" prefWidth="106.0" promptText="Date Of Birth" />
+            <ComboBox fx:id="SGender" layoutX="46.0" layoutY="245.0" prefHeight="26.0" prefWidth="106.0" promptText="Gender" />
+            <ComboBox fx:id="StudentSelectCountry" layoutX="231.0" layoutY="71.0" prefHeight="26.0" prefWidth="106.0" promptText="Select Country " />
+            <TextField fx:id="SBankDetails" layoutX="231.0" layoutY="32.0" prefHeight="26.0" prefWidth="106.0" promptText="Bank Details" />
+            <TextArea fx:id="StudentApplicantInformation" layoutX="251.0" layoutY="199.0" prefHeight="93.0" prefWidth="200.0" />
+            <Button layoutX="321.0" layoutY="310.0" mnemonicParsing="false" onAction="#StudentSubmitVisaApplicantInformationButtonOnClick" text="Submit" />
+            <Button layoutX="464.0" layoutY="246.0" mnemonicParsing="false" onAction="#StudentCheckInformationButtonOnClick" text="Check Information" />
+            <TextArea fx:id="WriteAboutYourself" layoutX="221.0" layoutY="115.0" prefHeight="74.0" prefWidth="365.0" promptText="Write a short text about you using the information in the form:-" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

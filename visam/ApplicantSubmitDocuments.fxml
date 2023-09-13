@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: aqua;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="e.visam.ApplicantSubmitDocumentsController">
+   <bottom>
+      <Button mnemonicParsing="false" onAction="#BackToApplicantDashBoardButtonOnClick" prefHeight="35.0" prefWidth="59.0" text="Back" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: aqua;" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="WriteandSubmitApplicantDocument" layoutX="102.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" />
+            <Button layoutX="179.0" layoutY="302.0" mnemonicParsing="false" onAction="#SubmitButtonOnClick" text="Submit" />
+            <Button layoutX="393.0" layoutY="196.0" mnemonicParsing="false" onAction="#ChooseFileButtonOnClick" text="Choose File" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
